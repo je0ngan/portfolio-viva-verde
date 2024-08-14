@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viva Verde</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/jquery-1.12.3.js"></script>
+    <script src="javascript/script.js"></script>
+</head>
+<body>
+    <!-- 상단 영역 시작 -->
+    <header>
+        <div class="wrap"></div>
+        <!-- 상단바 내용 -->
+        <header class="logo">
+            <ul>
+            <li><a href="#">Viva verde</a></li>
+        </ul>
+            </header>
+            <!-- 상단바 내용 끝-->
+
+            <!-- 카테고리 시작 -->
+            <nav>
+            <nav class="navbar">
+                
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">GORY</a></li>
+                    <li><a href="#">STORY</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">POST</a></li>
+                </ul>
+            </nav>
+            <!-- 카테고리 끝 -->
+
+            <!-- 스크린 시작 -->
+            <div class="slideshow-container">
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                    <img src="images/screen.jpg" alt="Image 1" style="width:100%;">
+                    </div>
+
+                        <div class="mySlides">
+                          <img src="images/screen3.jpg" style="width:100%;">
+                        </div>
+                      
+                        <div class="mySlides">
+                          <img src="images/screen4.jpg" style="width:100%;">
+                        </div>
+                      </div>
+
+                      <script>
+                        // JavaScript 추가
+                        var slideIndex = 0;
+                        showSlides();
+                      
+                        function showSlides() {
+                          var slides = document.getElementsByClassName("mySlides");
+                          for (var i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                          }
+                          slideIndex++;
+                          if (slideIndex > slides.length) {
+                            slideIndex = 1;
+                          }
+                          slides[slideIndex - 1].style.display = "block";
+                          setTimeout(showSlides, 3000); // 3초마다 슬라이드 전환
+                        }
+                      </script>
+            <!-- 스크린 끝 -->
+
+
+    <!-- 메인 내용 시작 -->
+    <main>
+        <!-- GORIES 시작 -->
+        <div class="title">GORIES</div>
+        <div class="container">
+            <div class="box">
+                <img src="images/LIVING.JPG" alt="LIVING">
+                <span class="label">LIVING</span>
+            </div>
+            <div class="box">
+                <img src="images/KITCHEN.JPG" alt="KITCHEN">
+                <span class="label">KITCHEN</span>
+            </div>
+            <div class="box">
+                <img src="images/KIT.JPG" alt="KIT">
+                <span class="label">KIT</span>
+            </div>
+            <div class="box">
+                <img src="images/BATHROOM.JPG" alt="BATHROOM">
+                <span class="label">BATHROOM</span>
+            </div>
+            <div class="box">
+                <img src="images/TOY.JPG" alt="TOY">
+                <span class="label">TOY</span>
+            </div>
+            <div class="box">
+                <img src="images/COSMETIC.JPG" alt="COSMETIC">
+                <span class="label">COSMETIC</span>
+            </div>
+        </div>
+        <!-- GORIES 끝 -->
+
+        <!-- SHOP 시작 -->
+        <div class="title-1">SHOP</div>
+        <div class="shop-container">
+            <div class="shop-item">
+                <img src="images/SHOP1.JPG" alt="오가닉 소창 행주">
+                <p><strong>오가닉 소창 행주</strong><br>4,000원</p>
+            </div>
+            <div class="shop-item">
+                <img src="images/SHOP2.JPG" alt="유기농 비누 주머니">
+                <p><strong>유기농 비누주머니</strong><br>2,000원</p>
+            </div>
+            <div class="shop-item">
+                <img src="images/SHOP3.JPG" alt="다회용 실리콘 지퍼백">
+                <p><strong>다회용 실리콘 지퍼백</strong><br>12,000원</p>
+            </div>
+            <div class="shop-item">
+                <img src="images/SHOP4.JPG" alt="다목적 사각 수세미">
+                <p><strong>다목적 사각 수세미</strong> <br>5,000원</p>
+            </div>
+            <div class="shop-item">
+                <img src="images/SHOP5.JPG" alt="온몸비누 그린">
+                <p><strong>온몸비누 그린</strong><br>8,500원</p>
+            </div>
+            <div class="shop-item">
+                <img src="images/SHOP6.JPG" alt="다회용 밀랍 푸드백(S/L)">
+                <p><strong>다회용 실리콘 지퍼백</strong><br>5000원</p>
+            </div>
+        </div>
+        <!-- SHOP 끝 -->
+
+        <!-- POST 시작 -->
+        <div class="title-3">POST</div>
+        <div class="container">
+            <div class="grid-container">
+                <div class="grid-item"><img src="images/post1.jpg" alt="Image 1"></div>
+                <div class="grid-item"><img src="images/post2.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="images/post3.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="images/post4.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="images/post5.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="images/post6.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="images/post7.jpg" alt="Image 7"></div>
+                <div class="grid-item"><img src="images/post8.jpg" alt="Image 8"></div>
+            </div>
+        </div>
+        <!-- POST 끝 -->
+    </main>
+    <footer>
+    <footer class="footer">
+        <p>Viva Verde<br>
+        (주) 비바 베르데 서울시 서대문구 연희동<br>
+        사업자등록번호: 109-87-43092</p>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">CATEGORY</a></li>
+            <li><a href="#">STORY</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">POST</a></li>
+            <li><a href="#">개인정보 보호정책</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+        </ul>
+    </footer>
+    <!-- 메인 내용 끝 -->
+    <!-- 상단영역 끝 -->
+    <!-- 슬라이드 시작 -->
+    <!-- 슬라이드 끝-->
+    <!-- 콘텐츠 영역 -->
+    <!-- 콘텐츠 영역 끝 -->
+    <!-- 하단 영역 시작 -->
+    <!-- 하단 영역 끝 -->
+</body>
+</html>

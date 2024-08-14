@@ -1,0 +1,348 @@
+@charset "utf-8";
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  outline-style: none;
+  color: #333;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: #fff;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+/* 지금부터 시작 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* logo */
+.logo {
+  background-color: #ffffff;
+  padding: 40px;
+  text-align: center;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  z-index: 10;
+  }
+  .logo ul li a {
+    color:black  }
+
+/* 카테고리 */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  left: 20px;
+}
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.navbar ul li {
+  margin-left: 70px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(77, 77, 77);
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+.p {
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  width: 300px; /* 이미지 컨테이너 너비 */
+  height: 300px; /* 이미지 컨테이너 높이 */
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* 초기에 숨김 */
+  transition: opacity 0.5s ease;
+}
+
+.image.active {
+  opacity: 1;
+}
+
+/* 고리 */
+.title {
+  overflow: hidden;
+  height: 580px; /* 글씨가 올라갈 영역의 높이 */
+  margin-right: 1400px;
+  margin-left: 8px;
+  padding-top: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #4e4e4e;
+}
+main {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 35px;
+  padding-top: 280px;
+}
+
+.box {
+  position: relative;
+  width: 400px; /* 가로가 긴 직사각형 설정 */
+  height: 200px; /* 비율에 맞춘 세로 설정 */
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex; /* 이미지를 가로로 배치할 경우 */
+  margin: 1px;
+  margin-right: 2px;
+  margin-left: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.label {
+  position: absolute;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 1em;
+  pointer-events: none; /* 클릭 이벤트 무시 */
+  text-align: center;
+}
+/* shop */
+.title-1 {
+  overflow: hidden;
+  height: 25px;
+  margin-left: 210px;
+  margin-top: -150px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #4e4e4e;
+}
+.shop-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 77px; /* 아이템 간격을 좁게 설정 */
+  padding: 35px; /* 컨테이너 패딩 설정 */
+  margin-left: 10px;
+  margin-right: 1390px;
+  margin-bottom: -1100px;
+}
+
+.shop-item {
+  text-align: center;
+}
+
+.shop-item img {
+  width: 175px;
+  height: auto; 
+  background-color: #ccc;
+  display: block;
+  margin: 0 auto 10px; /* 아래쪽 여백 추가 */
+}
+
+.shop-item p {
+  margin-top: 15px; /* 이미지와 텍스트 사이 간격 설정 */
+}
+/* POST */
+.title-3 {
+  margin-top: 110px;
+  margin-left: 215px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #4e4e4e;
+}
+
+.container {
+  position: absolute;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4열 그리드 */
+  gap: 20px; /* 아이템 간격 */
+  transform: translateY(1000px);
+}
+
+.grid-item {
+  /* background-color: #9b5353;
+  width: 100%;
+  height: 5px;
+  padding-top: 100%; /* 정사각형을 유지하기 위한 비율 패딩 */
+  position: relative;
+  margin-left: 210px;
+  margin-right: -57px;
+  margin-top: -90px;
+  margin-bottom: 95px; /* 아래쪽 간격 설정 */
+  align-items: center; */
+}
+
+.grid-item img {
+  position: relative;
+  width: 335px;
+  height: 100%;
+  display: flex;
+  margin-left: -140px;
+  top: 880px;
+  left: -52px;
+  gap: 10px;
+  background-color: #ccc;
+  display: block; 
+}
+
+.footer {
+  background-color: #97ADA3;
+  margin-top: 1500px;
+  color: #fff;
+  padding: 20px 0; /* 푸터의 위아래 패딩 설정 */
+  text-align: center;
+  clear: both; /* 다른 요소들과 겹치지 않도록 clear 설정 */
+}
+
+.footer p {
+  margin: 10px 0; /* 각 문단 사이의 간격 설정 */
+}
+.footer p:first-child {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.footer p:last-child {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+
+
+
+.footer {
+  background-color: 3D4840;
+  color: #f1f1f1;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 -5px 10px rgba(19, 44, 21, 0.2);
+}
+
+.footer p {
+  margin: 10px 0;
+  line-height: 2;
+  color: #fff;
+  
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #1c4f38;
+}
+
+.footer p:first-child {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.footer p:last-child {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+.footer .links, .footer .policies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .links a, .footer .policies a {
+  margin: 0 10px;
+}
+
+@media (max-width: 600px) 
+  .footer {
+      padding: 20px 10px;
+  }
+  .footer .links, .footer .policies {
+      flex-direction: column;
+  }
+  .footer a {
+      margin: 5px 0;
+  }
+
+  ul {
+    list-style-type: none; /* 리스트 스타일을 제거합니다. */
+    padding: 20px; /* 기본 패딩을 제거합니다. */
+    margin: 0; /* 기본 마진을 제거합니다. */
+    display: flex; /* flexbox 레이아웃을 사용하여 가로 정렬합니다. */
+    justify-content: center; /* 중앙 정렬을 위해 사용합니다. */
+}
+
+li {
+    margin: 0 30px; /* 각 항목 사이에 여유 공간을 추가합니다. */
+    color: white; /* 텍스트 색상을 설정합니다. */
+}
+
+a {
+    text-decoration: none; /* 링크의 밑줄을 제거합니다. */
+    color: inherit; /* 링크의 색상을 상속합니다. */
+}
